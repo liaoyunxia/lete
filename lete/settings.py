@@ -25,7 +25,7 @@ SECRET_KEY = '1bhe%)vm6q(l)qy9$djahjkgx9!m@!-^i^tmn7#$kcws42knbl'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['47.99.242.244',]
 
 
 # Application definition
@@ -75,8 +75,12 @@ WSGI_APPLICATION = 'lete.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'lete',
+        'USER': 'lete',
+        'PASSWORD': 'Liao0726',
+        'HOST': '127.0.0.1',
+        'POST': '3306',
     }
 }
 
