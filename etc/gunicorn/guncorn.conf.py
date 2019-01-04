@@ -16,8 +16,8 @@ threads = 2 #指定每个进程开启的线程数
 loglevel = 'info'
 access_log_format = '%(t)s %(p)s %(h)s "%(r)s" %(s)s %(L)s %(b)s %(f)s" "%(a)s"'    #设置gunicorn访问日志格式，错误日志无法设置
 
-accesslog = "/var/log/gunicorn/gunicorn_access.log"      #访问日志文件
-errorlog = "/var/log/gunicorn/gunicorn_error.log"        #错误日志文件
+accesslog = "/var/log/gunicorn/access.log"      #访问日志文件
+errorlog = "/var/log/gunicorn/error.log"        #错误日志文件
 
 chdir = '/root/workspace/lete'
 timeout = 30
