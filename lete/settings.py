@@ -11,16 +11,19 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
+from datetime import timedelta
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
+PROJECT_PATH = os.path.dirname(os.path.abspath(__file__))
+PROJECT_NAME = os.path.basename(BASE_DIR)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '1bhe%)vm6q(l)qy9$djahjkgx9!m@!-^i^tmn7#$kcws42knbl'
+API_VERSION = 'api/v1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -54,7 +57,7 @@ MIDDLEWARE = [
 ]
 
 # ROOT_URLCONF = 'lete.urls'
-ROOT_URLCONF = 'urls'
+ROOT_URLCONF = '{}.urls'.format(PROJECT_NAME)
 
 TEMPLATES = [
     {
@@ -72,7 +75,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'lete.wsgi.application'
+WSGI_APPLICATION = '{}.wsgi.application'.format(PROJECT_NAME)
 
 
 # Database
@@ -89,7 +92,7 @@ DATABASES = {
     # }
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3.11'),
     }
 }
 
