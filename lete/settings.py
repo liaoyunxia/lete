@@ -53,8 +53,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-# ROOT_URLCONF = 'lete.urls'
-ROOT_URLCONF = 'urls'
+ROOT_URLCONF = 'lete.urls'
+# ROOT_URLCONF = 'urls'
 
 TEMPLATES = [
     {
@@ -133,3 +133,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATIC_ROOT = '/static/lete/'
+
+MEDIA_URL = '/media/'
