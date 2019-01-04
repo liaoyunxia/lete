@@ -21,6 +21,6 @@ errorlog = "/var/log/gunicorn/error.log"        #错误日志文件
 
 chdir = '/root/workspace/lete'
 timeout = 30
-worker_class = 'gevent'
+worker_class = 'sync'
 
 proc_name = 'fof_api'   #进程名
