@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 import datetime
 
 from django.contrib.auth import get_user_model
-from django.contrib.auth.base_user import BaseUserManager
+# from django.contrib.auth.base_user import BaseUserManager
 from django.contrib.auth.models import AbstractUser
 from django.core.exceptions import ValidationError
 from django.db import models
@@ -15,27 +15,27 @@ from django.utils.translation import ugettext_lazy as _
 GENDER_CHOICES = (('m', _('male')), ('f', _('female')), ('', '未填写'))
 
 
-class UserManager(BaseUserManager):
-
-    def _create_user(self, username, email, password, is_staff, is_superuser, **extra_fields):
-        now = timezone.now()
-        if not username:
-            raise ValueError('The given username must be set')
-        email = self.normalize_email(email)
-        user = self.model(username=username, email=email,
-                          is_staff=is_staff, is_active=True,
-                          is_superuser=is_superuser,
-                          date_joined=now, **extra_fields)
-        user.set_password(password)
-        user.save()
-        return user
-
-    def create_user(self, username, email=None, password=None, **extra_fields):
-        return self._create_user(username, email, password, False, False, **extra_fields)
-
-    def create_superuser(self, username, email, password, **extra_fields):
-        return self._create_user(username, email, password, True, True,
-                                 **extra_fields)
+# class UserManager(BaseUserManager):
+#
+#     def _create_user(self, username, email, password, is_staff, is_superuser, **extra_fields):
+#         now = timezone.now()
+#         if not username:
+#             raise ValueError('The given username must be set')
+#         email = self.normalize_email(email)
+#         user = self.model(username=username, email=email,
+#                           is_staff=is_staff, is_active=True,
+#                           is_superuser=is_superuser,
+#                           date_joined=now, **extra_fields)
+#         user.set_password(password)
+#         user.save()
+#         return user
+#
+#     def create_user(self, username, email=None, password=None, **extra_fields):
+#         return self._create_user(username, email, password, False, False, **extra_fields)
+#
+#     def create_superuser(self, username, email, password, **extra_fields):
+#         return self._create_user(username, email, password, True, True,
+#                                  **extra_fields)
 
 
 class User(AbstractUser):
@@ -56,7 +56,7 @@ class User(AbstractUser):
     grade = models.PositiveSmallIntegerField(_('grade'), default=0)
     birthday = models.DateTimeField(_('birthday'), default=datetime.datetime(1980, 1, 1, 12, 0, 0), editable=False)
     is_login = models.BooleanField(_('is_login'), default=False)
-    objects = UserManager()
+    # objects = UserManager()
     REQUIRED_FIELDS = ['nickname', 'email']  # 只在createsuperuser时起作用
 
 
