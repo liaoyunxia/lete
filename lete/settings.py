@@ -31,7 +31,7 @@ API_VERSION = 'api/v1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
+AUTH_USER_MODEL = '.User'
 ALLOWED_HOSTS = ['47.99.242.244',]
 
 APP_PATH = os.path.join(PROJECT_PATH, 'apps')
