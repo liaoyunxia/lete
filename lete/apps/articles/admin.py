@@ -8,7 +8,7 @@ from django.contrib.auth.forms import UserChangeForm
 from django.utils.translation import ugettext_lazy as _
 # from import_export.admin import ImportExportMixin
 
-from article.models import Article
+from articles.models import Article
 
 
 class ArticleAdmin(admin.ModelAdmin):
