@@ -15,6 +15,7 @@ from django.utils.translation import ugettext_lazy as _
 GENDER_CHOICES = (('m', _('male')), ('f', _('female')), ('', '未填写'))
 USER_TYPE_CHOICES = ((0, '普通帐户'), (1, '企业帐户'), (2, '企业员工'))
 
+
 class UserManager(BaseUserManager):
 
     def _create_user(self, username, email, password, is_staff, is_superuser, **extra_fields):
