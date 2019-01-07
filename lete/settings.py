@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     
     # third part
     'gunicorn',
+    # apps
+    'accounts',
 
 ]
 
