@@ -43,11 +43,12 @@ INSTALLED_APPS = [
     
     # third part
     'gunicorn',
+    'accounts',
 ]
 
-for dirname in next(os.walk(os.path.join(PROJECT_PATH, 'apps')))[1]:
-    if dirname not in ['__pycache__']:
-        INSTALLED_APPS += ['{}.apps.{}.apps.Config'.format(PROJECT_NAME, dirname)]
+# for dirname in next(os.walk(os.path.join(PROJECT_PATH, 'apps')))[1]:
+#     if dirname not in ['__pycache__']:
+#         INSTALLED_APPS += ['{}.apps.{}.apps.Config'.format(PROJECT_NAME, dirname)]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
