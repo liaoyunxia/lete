@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c99871b5-7b76-4172-b3d9-012075358f5a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lete/apps/common/models.py" afterPath="$PROJECT_DIR$/lete/apps/common/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lete/apps/articles/admin.py" afterPath="$PROJECT_DIR$/lete/apps/articles/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lete/apps/articles/models.py" afterPath="$PROJECT_DIR$/lete/apps/articles/models.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,6 +23,10 @@
               <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding>
                 <element signature="e#67#82#0" expanded="true" />
+                <marker date="1546853157890" expanded="true" signature="1565:2980" ph="..." />
+                <marker date="1546853157890" expanded="true" signature="3016:3272" ph="..." />
+                <marker date="1546853157890" expanded="true" signature="3074:3227" ph="..." />
+                <marker date="1546853157890" expanded="true" signature="3307:3437" ph="..." />
               </folding>
             </state>
           </provider>
@@ -69,19 +75,33 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lete/apps/articles/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="55" />
+            <state relative-caret-position="475">
+              <caret line="19" column="10" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="10" />
+              <folding>
+                <element signature="e#67#82#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lete/apps/articles/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="18" column="52" lean-forward="true" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lete/apps/common/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="525">
+              <caret line="21" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding>
+                <element signature="e#67#95#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -91,17 +111,29 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="356">
               <caret line="40" column="27" lean-forward="false" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lete/apps/activities/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <folding>
+                <marker date="1546854081214" expanded="true" signature="1329:1580" ph="..." />
+                <marker date="1546854081214" expanded="true" signature="1810:2207" ph="..." />
+                <marker date="1546854081214" expanded="true" signature="2299:2768" ph="..." />
+                <marker date="1546854081214" expanded="true" signature="2305:2765" ph="..." />
+                <marker date="1546854081214" expanded="true" signature="2442:2758" ph="..." />
+                <marker date="1546854081214" expanded="true" signature="2478:2747" ph="..." />
+                <marker date="1546854081214" expanded="true" signature="2796:3032" ph="..." />
+                <marker date="1546854081214" expanded="true" signature="3074:3157" ph="..." />
+                <marker date="1546854081214" expanded="true" signature="3186:3346" ph="..." />
+                <marker date="1546854081214" expanded="true" signature="3479:3554" ph="..." />
+                <marker date="1546854081214" expanded="true" signature="3569:3908" ph="..." />
+                <marker date="1546854081214" expanded="true" signature="3586:3770" ph="..." />
+                <marker date="1546854081214" expanded="true" signature="3776:3907" ph="..." />
+                <marker date="1546854081214" expanded="true" signature="3965:4066" ph="..." />
+                <marker date="1546854081214" expanded="true" signature="4096:4490" ph="..." />
+                <marker date="1546854081214" expanded="true" signature="4102:4199" ph="..." />
+                <marker date="1546854081214" expanded="true" signature="4207:4294" ph="..." />
+                <marker date="1546854081214" expanded="true" signature="4302:4390" ph="..." />
+                <marker date="1546854081214" expanded="true" signature="4398:4487" ph="..." />
+                <marker date="1546854081214" expanded="true" signature="4494:4619" ph="..." />
+                <marker date="1546854081214" expanded="true" signature="4671:4772" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -144,8 +176,9 @@
         <option value="$PROJECT_DIR$/lete/apps/accounts/admin.py" />
         <option value="$PROJECT_DIR$/lete/apps/accounts/models.py" />
         <option value="$PROJECT_DIR$/lete/settings.py" />
-        <option value="$PROJECT_DIR$/lete/apps/articles/models.py" />
         <option value="$PROJECT_DIR$/lete/apps/common/models.py" />
+        <option value="$PROJECT_DIR$/lete/apps/articles/models.py" />
+        <option value="$PROJECT_DIR$/lete/apps/articles/admin.py" />
       </list>
     </option>
   </component>
@@ -661,6 +694,10 @@
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding>
             <element signature="e#67#82#0" expanded="true" />
+            <marker date="1546853157890" expanded="true" signature="1565:2980" ph="..." />
+            <marker date="1546853157890" expanded="true" signature="3016:3272" ph="..." />
+            <marker date="1546853157890" expanded="true" signature="3074:3227" ph="..." />
+            <marker date="1546853157890" expanded="true" signature="3307:3437" ph="..." />
           </folding>
         </state>
       </provider>
@@ -677,22 +714,56 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="356">
           <caret line="40" column="27" lean-forward="false" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lete/apps/articles/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="55" />
-          <folding />
+          <folding>
+            <marker date="1546854081214" expanded="true" signature="1329:1580" ph="..." />
+            <marker date="1546854081214" expanded="true" signature="1810:2207" ph="..." />
+            <marker date="1546854081214" expanded="true" signature="2299:2768" ph="..." />
+            <marker date="1546854081214" expanded="true" signature="2305:2765" ph="..." />
+            <marker date="1546854081214" expanded="true" signature="2442:2758" ph="..." />
+            <marker date="1546854081214" expanded="true" signature="2478:2747" ph="..." />
+            <marker date="1546854081214" expanded="true" signature="2796:3032" ph="..." />
+            <marker date="1546854081214" expanded="true" signature="3074:3157" ph="..." />
+            <marker date="1546854081214" expanded="true" signature="3186:3346" ph="..." />
+            <marker date="1546854081214" expanded="true" signature="3479:3554" ph="..." />
+            <marker date="1546854081214" expanded="true" signature="3569:3908" ph="..." />
+            <marker date="1546854081214" expanded="true" signature="3586:3770" ph="..." />
+            <marker date="1546854081214" expanded="true" signature="3776:3907" ph="..." />
+            <marker date="1546854081214" expanded="true" signature="3965:4066" ph="..." />
+            <marker date="1546854081214" expanded="true" signature="4096:4490" ph="..." />
+            <marker date="1546854081214" expanded="true" signature="4102:4199" ph="..." />
+            <marker date="1546854081214" expanded="true" signature="4207:4294" ph="..." />
+            <marker date="1546854081214" expanded="true" signature="4302:4390" ph="..." />
+            <marker date="1546854081214" expanded="true" signature="4398:4487" ph="..." />
+            <marker date="1546854081214" expanded="true" signature="4494:4619" ph="..." />
+            <marker date="1546854081214" expanded="true" signature="4671:4772" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lete/apps/common/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state relative-caret-position="525">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="e#67#95#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lete/apps/articles/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="19" column="10" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="10" />
+          <folding>
+            <element signature="e#67#82#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lete/apps/articles/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="18" column="52" lean-forward="true" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
           <folding />
         </state>
       </provider>
