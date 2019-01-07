@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     # third part
     'gunicorn',
     'accounts',
+    'activies',
 ]
 
 # for dirname in next(os.walk(os.path.join(PROJECT_PATH, 'apps')))[1]:
