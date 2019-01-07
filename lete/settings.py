@@ -39,7 +39,7 @@ ALLOWED_HOSTS = ['47.99.242.244',]
 
 APP_PATH = os.path.join(PROJECT_PATH, 'apps')
 sys.path.insert(1, APP_PATH)
-
+sys.path.insert(0, '..')
 # Application definition
 
 INSTALLED_APPS = [
