@@ -39,9 +39,9 @@ class UserManager(BaseUserManager):
 
 
 class User(AbstractUser):
-    name = models.CharFiled(_('name'), max_length=50)
-    nickname = models.CharFiled(_('nickname'), max_length=30)
-    gender = models.CharFiled(_('gender'), max_length=1, choices=GENDER_CHOICES, default='m')
+    name = models.CharField(_('name'), max_length=50)
+    nickname = models.CharField(_('nickname'), max_length=30)
+    gender = models.CharField(_('gender'), max_length=1, choices=GENDER_CHOICES, default='m')
 
     about = models.CharField(_('about'), max_length=70, blank=True)
     image_urls = models.CharField(_('image_urls'), max_length=2000, blank=True)
