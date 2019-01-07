@@ -47,7 +47,7 @@ class User(AbstractUser):
     about = models.CharField(_('about'), max_length=70, blank=True)
     image_urls = models.CharField(_('image_urls'), max_length=2000, blank=True)
     tags = models.CharField(_('tags'), max_length=200, blank=True)
-    mtype = models.SmallIntegerField(_('mtype'), max_length=1, choices=USER_TYPE_CHOICES, default=0)
+    mtype = models.SmallIntegerField(_('mtype'), choices=USER_TYPE_CHOICES, default=0)
 
     id_card_number = models.CharField(_('id_card_number'), max_length=18, blank=True)
     phone_number = models.CharField(_('phone_number'), max_length=20, blank=True)
