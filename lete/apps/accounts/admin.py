@@ -51,8 +51,8 @@ class UserAdmin(auth.admin.UserAdmin):
         if obj:
             if not request.user.is_superuser:
                 fields = [f.name for f in obj._meta.get_fields()]
-                if request.user.type == 1:
-                    fields.remove('is_active')
+                # if request.user.type == 1:
+                #     fields.remove('is_active')
                 if request.user.id == obj.id:  # 自己和admin才能改自己密码.
                     fields.remove('password')
                 return fields
