@@ -30,6 +30,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['47.99.242.244',]
 
+APP_PATH = os.path.join(BASE_DIR, 'apps')
+sys.path.insert(1, APP_PATH)
 
 # Application definition
 
