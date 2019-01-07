@@ -59,3 +59,5 @@ class UserAdmin(auth.admin.UserAdmin):
             else:
                 return ('risk_level', 'level', 'grade')
         return super(UserAdmin, self).get_readonly_fields(request)
+
+admin.site.register(get_user_model(), UserAdmin)
