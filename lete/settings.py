@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/1.11/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.11/ref/settings/
 """
-
+import sys
 import os
 from datetime import timedelta
 
@@ -34,7 +34,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['47.99.242.244',]
 
-APP_PATH = os.path.join(BASE_DIR, 'apps')
+APP_PATH = os.path.join(PROJECT_PATH, 'apps')
 sys.path.insert(1, APP_PATH)
 
 # Application definition
