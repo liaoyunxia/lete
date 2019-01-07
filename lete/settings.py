@@ -58,7 +58,7 @@ INSTALLED_APPS = [
 
 for dirname in next(os.walk(os.path.join(PROJECT_PATH, 'apps')))[1]:
     if dirname not in ['__pycache__']:
-        INSTALLED_APPS += ['{}.apps.{}.apps.Config'.format(PROJECT_NAME, dirname)]
+        INSTALLED_APPS += [dirname]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
