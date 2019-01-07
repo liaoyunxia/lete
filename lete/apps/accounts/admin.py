@@ -20,7 +20,7 @@ class UserAdmin(auth.admin.UserAdmin):
         (None, {'fields': ('username', 'password')}),
         (_('Personal info'), {'fields': ('nickname', 'gender', 'image_urls', 'about', 'tags')}),
         (_('Personal info'), {'fields': ('first_name', 'last_name', 'date_joined', 'name', 'email', 'phone_number', 'id_card_number', 'social_user_id',)}),
-        (_('Permissions'), {'fields': ('type', 'is_active', 'is_staff', 'groups', 'organization')}),
+        (_('Permissions'), {'fields': ('type', 'is_active', 'is_staff', 'groups', )}),
     )
     add_fieldsets = (
         (None, {'classes': ('wide',),
@@ -29,11 +29,11 @@ class UserAdmin(auth.admin.UserAdmin):
                 'fields': ('nickname', 'gender', 'image_urls')})
     )
     form = UserChangeForm
-    list_display = ['id', 'get_preview', 'username', 'get_groups', 'phone_number', 'date_joined', 'is_active']
+    list_display = ['id', 'username', 'get_groups', 'phone_number', 'date_joined', 'is_active']
     list_filter = ['is_staff', 'gender', 'username', 'is_active']
     suit_list_filter_horizontal = ['gender', 'username', 'is_active']
     search_fields = ['username', 'id', 'first_name', 'last_name', 'email', 'name']
-    filter_horizontal = ('groups', 'user_permissions', 'organization')
+    filter_horizontal = ('groups', 'user_permissions', )
 
     def get_groups(self, obj):
         return '#'.join([item.name for item in obj.groups.all()])
