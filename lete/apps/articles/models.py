@@ -18,7 +18,7 @@ class Article(UserModel, TimeModel, StateModel, NoModel):
     name = models.CharField(_('name'), max_length=50)
     content = models.TextField(_('content'), blank=True)
     remark = models.CharField(_('remark'), max_length=200, blank=True)
-    type = models.IntegerField(_('import_method'), choices=ARTICLE_TYPE_CHOICES, default=0)
+    type = models.IntegerField(_('type'), choices=ARTICLE_TYPE_CHOICES, default=0)
 
     class Meta:
         verbose_name = _('article')
