@@ -7,7 +7,7 @@ from django.db import models
 from django.utils import timezone
 from django.utils.translation import ugettext_lazy as _
 
-from ..common.models import UserModel, TimeModel, StateModel
+from common.models import UserModel, TimeModel, StateModel
 
 ARTICLE_IMPORT_METHOD_CHOICES = ((0, ' 用户编辑'), (1, '爬虫获取'), (2, '用户复制'))
 
