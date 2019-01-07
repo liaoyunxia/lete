@@ -126,7 +126,8 @@ DATABASES = {
     #     'NAME': os.path.join(BASE_DIR, 'db.sqlite3.11'),
     # }
 }
-
+LANGUAGE_CODE = 'zh-cn'
+TIME_ZONE = 'Asia/Shanghai'
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
@@ -150,9 +151,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
-
-TIME_ZONE = 'UTC'
+# LANGUAGE_CODE = 'en-us'
+#
+# TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
