@@ -13,7 +13,7 @@ from django.utils.translation import ugettext_lazy as _
 
 # Create your models here.
 GENDER_CHOICES = (('m', _('male')), ('f', _('female')), ('', '未填写'))
-
+USER_TYPE_CHOICES = ((0, '普通帐户'), (1, '企业帐户'), (2, '企业员工'))
 
 class UserManager(BaseUserManager):
 
@@ -46,6 +46,7 @@ class User(AbstractUser):
     about = models.CharField(_('about'), max_length=70, blank=True)
     image_urls = models.CharField(_('image_urls'), max_length=2000, blank=True)
     tags = models.CharField(_('tags'), max_length=200, blank=True)
+    mtype = models.SmallIntegerField(_('mtype'), max_length=1, choices=USER_TYPE_CHOICES, default=0)
 
     id_card_number = models.CharField(_('id_card_number'), max_length=18, blank=True)
     phone_number = models.CharField(_('phone_number'), max_length=20, blank=True)

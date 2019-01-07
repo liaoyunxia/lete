@@ -20,7 +20,7 @@ class UserAdmin(auth.admin.UserAdmin):
         (None, {'fields': ('username', 'password')}),
         (_('Personal info'), {'fields': ('nickname', 'gender', 'image_urls', 'about', 'tags')}),
         (_('Personal info'), {'fields': ('first_name', 'last_name', 'date_joined', 'name', 'email', 'phone_number', 'id_card_number', 'social_user_id',)}),
-        (_('Permissions'), {'fields': ('type', 'is_active', 'is_staff', 'groups', )}),
+        (_('Permissions'), {'fields': ('mtype', 'is_active', 'is_staff', 'groups', )}),
     )
     add_fieldsets = (
         (None, {'classes': ('wide',),
@@ -51,7 +51,7 @@ class UserAdmin(auth.admin.UserAdmin):
         if obj:
             if not request.user.is_superuser:
                 fields = [f.name for f in obj._meta.get_fields()]
-                # if request.user.type == 1:
+                # if request.user.mtype == 1:
                 #     fields.remove('is_active')
                 if request.user.id == obj.id:  # 自己和admin才能改自己密码.
                     fields.remove('password')
