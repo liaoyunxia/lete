@@ -15,8 +15,8 @@ class ArticleAdmin(admin.ModelAdmin):
     image_width = 32
     image_height = 32
 
-    list_display = ['id', 'name', 'import_method', 'remark', 'user','url', 'modify_time',]
-    list_filter = ['import_method', 'user', 'state']
+    list_display = ['id', 'name', 'type', 'import_method', 'remark', 'user', 'url', 'modify_time']
+    list_filter = ['import_method', 'user', 'state', 'type']
     suit_list_filter_horizontal = ['import_method', 'name', 'state']
     search_fields = ['name', 'user__username']
     # filter_horizontal = ('groups', 'user_permissions', )
