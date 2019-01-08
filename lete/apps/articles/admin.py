@@ -18,7 +18,7 @@ class ArticleAdmin(admin.ModelAdmin):
     fieldsets = (
         (None, {'fields': ('name', 'no')}),
         (_('article content'), {'fields': ('remark', 'url', 'content')}),
-        (_('article info'), {'fields': ('type', 'state', 'import_method', 'user')}),
+        (_('article state'), {'fields': ('type', 'state', 'import_method', 'user')}),
         # (_('time'), {'fields': ('modify_time',)}),
     )
 
