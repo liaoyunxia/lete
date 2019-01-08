@@ -19,7 +19,7 @@ class ArticleAdmin(admin.ModelAdmin):
         (None, {'fields': ('name', 'no')}),
         (_('article content'), {'fields': ('remark', 'url', 'content')}),
         (_('article info'), {'fields': ('type', 'state', 'import_method', 'user_id', '')}),
-        (_('time'), {'fields': ('modify_time',)}),
+        # (_('time'), {'fields': ('modify_time',)}),
     )
 
     add_fieldsets = (
