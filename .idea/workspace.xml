@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c99871b5-7b76-4172-b3d9-012075358f5a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lete/settings.py" afterPath="$PROJECT_DIR$/lete/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lete/urls.py" afterPath="$PROJECT_DIR$/lete/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lete/apps/home/urls.py" afterPath="$PROJECT_DIR$/lete/apps/home/urls.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -59,7 +58,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lete/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="675">
@@ -91,12 +90,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lete/apps/home/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="500">
+              <caret line="20" column="15" lean-forward="true" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
+              <folding>
+                <element signature="e#667#708#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -104,8 +105,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lete/apps/home/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="686">
-              <caret line="31" column="12" lean-forward="false" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="23" />
               <folding>
                 <element signature="e#24#63#0" expanded="true" />
               </folding>
@@ -157,12 +158,12 @@
         <option value="$PROJECT_DIR$/lete/apps/accounts/admin.py" />
         <option value="$PROJECT_DIR$/lete/apps/articles/admin.py" />
         <option value="$PROJECT_DIR$/lete/apps/articles/models.py" />
-        <option value="$PROJECT_DIR$/lete/apps/home/urls.py" />
         <option value="$PROJECT_DIR$/lete/apps/api/urls.py" />
         <option value="$PROJECT_DIR$/lete/apps/home/views.py" />
         <option value="$PROJECT_DIR$/lete/apps/api/views.py" />
         <option value="$PROJECT_DIR$/lete/settings.py" />
         <option value="$PROJECT_DIR$/lete/urls.py" />
+        <option value="$PROJECT_DIR$/lete/apps/home/urls.py" />
       </list>
     </option>
   </component>
@@ -798,28 +799,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lete/apps/home/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="686">
-          <caret line="31" column="12" lean-forward="false" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
-          <folding>
-            <element signature="e#24#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lete/apps/articles/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lete/apps/home/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -854,6 +837,26 @@
           <caret line="30" column="110" lean-forward="true" selection-start-line="30" selection-start-column="110" selection-end-line="30" selection-end-column="110" />
           <folding>
             <element signature="e#643#652#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lete/apps/home/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="23" />
+          <folding>
+            <element signature="e#24#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lete/apps/home/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="20" column="15" lean-forward="true" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
+          <folding>
+            <element signature="e#667#708#0" expanded="true" />
           </folding>
         </state>
       </provider>
