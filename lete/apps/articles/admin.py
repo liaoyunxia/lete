@@ -18,14 +18,14 @@ class ArticleAdmin(admin.ModelAdmin):
     fieldsets = (
         (None, {'fields': ('name', 'no')}),
         (_('article content'), {'fields': ('remark', 'url', 'content')}),
-        (_('article info'), {'fields': ('type', 'state', 'import_method', 'user_id', '')}),
+        (_('article info'), {'fields': ('type', 'state', 'import_method', 'user', '')}),
         # (_('time'), {'fields': ('modify_time',)}),
     )
 
     add_fieldsets = (
         (None, {'fields': ('name', 'no')}),
         (_('article content'), {'fields': ('remark', 'url', 'content')}),
-        (_('article info'), {'fields': ('type', 'state', 'import_method', 'user_id', '')}),
+        (_('article info'), {'fields': ('type', 'state', 'import_method', 'user', '')}),
     )
 
     list_display = ['id', 'name', 'type', 'import_method', 'remark', 'user', 'url', 'modify_time']
