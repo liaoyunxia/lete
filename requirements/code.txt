@@ -1,0 +1,13 @@
+Jinja2
+weibo
+pymysql
+djangorestframework
+markdown 
+django-filter
+django-ipware
+django-simple-captcha
+django_fsm
+django-s3direct
+django-haystack
+django-import-export
+https://github.com/darklow/django-suit/tarball/v2
