@@ -6,7 +6,7 @@ from django.contrib.auth import get_user_model
 from django.shortcuts import render, redirect
 from rest_framework.views import APIView
 from django.utils.translation import ugettext_lazy as _
-
+from django.views import generic
 from django.shortcuts import render
 
 # Create your views here.
@@ -15,18 +15,17 @@ def caculater(request):
     return render(request, 'caculater.html', locals())
 
 
-class HomeView(APIView):
+class HomeView(generic.DetailView):
     '''
     首页
     '''
-    def post(self, request, *args, **kwargs):
-        pass
+    template_name = 'home.html'
+
+    def get_queryset(self):
+        return None
 
     def get(self, request, *args, **kwargs):
         if not request.user.is_authenticated():
             return redirect('/accounts/login/')
         template_name = self.template_name if self.template_name else '{}.html'.format(self.name)
         return render(request, template_name, locals())
-
-    def other(self, request, *args, **kwargs):
-        pass
