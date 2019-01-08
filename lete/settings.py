@@ -51,10 +51,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     
     # third part
-    'gunicorn',
-    # 'accounts',
-    # 'articles',
-    # 'common',
+    #'gunicorn',
+    'rest_framework'
 ]
 
 for dirname in next(os.walk(os.path.join(PROJECT_PATH, 'apps')))[1]:
