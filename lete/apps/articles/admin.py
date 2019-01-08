@@ -25,7 +25,7 @@ class ArticleAdmin(admin.ModelAdmin):
     add_fieldsets = (
         (None, {'fields': ('name', 'no')}),
         (_('article content'), {'fields': ('remark', 'url', 'content')}),
-        (_('article info'), {'fields': ('type', 'state', 'import_method', 'user')}),
+        (_('article state'), {'fields': ('type', 'state', 'import_method', 'user')}),
     )
 
     list_display = ['id', 'name', 'type', 'import_method', 'remark', 'user', 'url', 'modify_time']
