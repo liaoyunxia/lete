@@ -13,15 +13,3 @@ def caculater(request):
     title = '计算器'
     return render(request, 'caculater.html', locals())
 
-class HomeView(View):
-    '''
-    首页
-    '''
-    def post():
-        pass
-
-    def get():
-        pass
-
-    def other():
-        pass
