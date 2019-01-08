@@ -15,6 +15,19 @@ class ArticleAdmin(admin.ModelAdmin):
     image_width = 32
     image_height = 32
 
+    fieldsets = (
+        (None, {'fields': ('name', 'no')}),
+        (_('article content'), {'fields': ('remark', 'url', 'content')}),
+        (_('article info'), {'fields': ('type', 'state', 'import_method', 'user_id', '')}),
+        (_('time'), {'fields': ('create_time', 'modify_time',)}),
+    )
+
+    add_fieldsets = (
+        (None, {'fields': ('name', 'no')}),
+        (_('article content'), {'fields': ('remark', 'url', 'content')}),
+        (_('article info'), {'fields': ('type', 'state', 'import_method', 'user_id', '')}),
+    )
+
     list_display = ['id', 'name', 'type', 'import_method', 'remark', 'user', 'url', 'modify_time']
     list_filter = ['import_method', 'user', 'state', 'type']
     suit_list_filter_horizontal = ['import_method', 'name', 'state']
