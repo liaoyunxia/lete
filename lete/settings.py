@@ -52,7 +52,7 @@ INSTALLED_APPS = [
     
     # third part
     #'gunicorn',
-    'jinjia',
+    #'jinjia',
     'rest_framework'
 ]
 
