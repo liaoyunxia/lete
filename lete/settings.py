@@ -178,6 +178,5 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = '/static/lete/'
-
+STATIC_ROOT = '/static/lete/static/'
 MEDIA_URL = '/media/'
