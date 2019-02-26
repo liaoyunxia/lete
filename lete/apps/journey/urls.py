@@ -20,5 +20,5 @@ from . import views
 
 urlpatterns = [
     url(r'^$', views.HomeView.as_view(), {'title': '首页', 'child_header': 1}),
-    url(r'caculater/$', views.caculater),
+    url(r'/$', views.caculater),
 ]
