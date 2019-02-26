@@ -1,13 +1,15 @@
 <!doctype html>
 <html lang="en">
+  {%block header%}
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Introducing Lollipop, a sweet new take on Android.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Android</title>
+    <title>{{title}}</title>
 
     <!-- Page styles -->
+    {%block header_css%}
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="/static/mdl/material.min.css">
@@ -23,10 +25,19 @@
       z-index: 900;
     }
     </style>
+    {%block header_css_extend %}
+    {%endblock%}
+    {%endblock%}
+    {%block header_js%}
+    {%block header_js_extend%}
+    {%endblock%}    
+    {%endblock%}
   </head>
+  {%endblock%}
+  {%block body%}
   <body>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-
+      {%block page_navigation %}
       <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
         <div class="mdl-layout__header-row">
           <span class="android-title mdl-layout-title">
@@ -98,7 +109,8 @@
           <a class="mdl-navigation__link" href="/journey/share/talks/boss/">BOSS说</a>
         </nav>
       </div>
-
+      {% endblock %}
+      {%block page_content%}
       <div class="android-content mdl-layout__content">
         <a name="top"></a>
         <div class="android-be-together-section mdl-typography--text-center">
@@ -306,8 +318,14 @@
 
         </footer>
       </div>
+      {%endblock%}
     </div>
     <a href="#screens" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">返回首部</a>
+    {%block tail_js%}
     <script src="/static/mdl/material.min.js"></script>
+    {%block tail_js_extend%}
+    {%endblock%}
+    {%endblock%}
   </body>
+  {%endblock%}
 </html>
