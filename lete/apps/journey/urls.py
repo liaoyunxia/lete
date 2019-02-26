@@ -19,6 +19,6 @@ from django.contrib import admin
 from . import views
 
 urlpatterns = [
-    url(r'^$', views.HomeView.as_view(), {'title': '首页', 'child_header': 1}),
-    url(r'/$', views.caculater),
+    url(r'^$', views.JourneyView.as_view(), {'title': '行程首页', 'child_header': 1}),
+    url(r'^share/$', views.share),
 ]

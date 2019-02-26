@@ -10,14 +10,14 @@ from django.views import generic
 from django.shortcuts import render
 
 # Create your views here.
-def caculater(request):
-    title = '计算器'
-    return render(request, 'caculater.html', locals())
+def share(request):
+    title = '行程分享'
+    return render(request, 'share.html', locals())
 
 
-class HomeView(generic.DetailView):
+class JourneyView(generic.DetailView):
     '''
-    首页
+    行程首页
     '''
     template_name = 'index.html'
 
