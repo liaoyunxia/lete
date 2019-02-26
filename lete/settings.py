@@ -35,7 +35,7 @@ DEBUG = True
 SESSION_ENGINE = 'django.contrib.sessions.backends.signed_cookies'
 AUTH_USER_MODEL = 'accounts.User'
 
-ALLOWED_HOSTS = ['47.99.242.244',]
+ALLOWED_HOSTS = ['47.99.242.244', '127.0.0.1', 'local.fuwo.com']
 
 APP_PATH = os.path.join(PROJECT_PATH, 'apps')
 sys.path.insert(1, APP_PATH)
