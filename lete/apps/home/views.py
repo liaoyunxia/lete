@@ -19,7 +19,7 @@ class HomeView(generic.DetailView):
     '''
     首页
     '''
-    template_name = 'home.html'
+    template_name = 'index.html'
 
     def get_queryset(self):
         return None
