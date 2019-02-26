@@ -19,7 +19,7 @@ class JourneyView(generic.DetailView):
     '''
     行程首页
     '''
-    template_name = 'index.html'
+    template_name = 'journey.html'
 
     def get_queryset(self):
         return None
