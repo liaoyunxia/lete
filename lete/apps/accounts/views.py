@@ -25,25 +25,25 @@ import json
  #    url(r'^update_password/$', views.update_password),
 
 
- def login(request):
+def login(request):
  	return render(request, 'login.html', locals())
 
 
- def update_password(request):
+def update_password(request):
  	return render(request, 'update_password.html', locals())
 
 
- def logout(request):
+def logout(request):
  	auth.logout(request.user)
 
  	return render(request, 'logout.html', locals())
 
 
- def register(request):
+def register(request):
  	return render(request, 'register.html', locals())
 
 
- def login_action(request):
+def login_action(request):
  	username = request.POST.get('username')
  	password = request.POST.get('password')
 
@@ -54,5 +54,4 @@ import json
  		return Response({'code': 10000, 'msg': 'success'})
  	else:
  		return Response({'code': 10001, 'msg': 'not found user'})
-
 
