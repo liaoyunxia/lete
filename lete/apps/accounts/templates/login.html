@@ -1,14 +1,15 @@
 {% extends 'base/base.html' %}
 {% block header_css_extend %}
 <style>
-.login-outer{
+.center-outer{
 	margin: 0 auto;
+	position: relative;
 }
 
-.login-box{
+.center-box{
 	position: relative;
 	text-align:center
-
+	margin: 0 auto;
 
 }
 .demo-card-wide.mdl-card {
@@ -29,8 +30,8 @@
 
 {% block center_info %}
 		<div class="android-wear-section">
-          <div class="android-wear-band login-outer">
-          	<div class="demo-card-wide login-box mdl-card mdl-shadow--2dp">
+          <div class="android-wear-band center-outer">
+          	<div class="demo-card-wide center-box mdl-card mdl-shadow--2dp">
 			  <div class="mdl-card__title">
 			    <h2 class="mdl-card__title-text">Welcome</h2>
 			  </div>
@@ -46,9 +47,9 @@
 				    <input class="mdl-textfield__input" type="text" id="passwprd">
 				    <label class="mdl-textfield__label" for="password">密码</label>
 				  </div>
-				  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
+				  <label class=" center-box mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
 					  <input type="checkbox" id="checkbox-2" class="mdl-checkbox__input">
-					  <span class="mdl-checkbox__label">记住</span>
+					  <span class="mdl-checkbox__label">记住密码</span>
 					</label>
 
 				
