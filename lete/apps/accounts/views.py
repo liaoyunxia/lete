@@ -37,7 +37,7 @@ def update_password(request):
 
 def logout(request):
  	auth.logout(request.user)
- 	return render(request, 'logout.html', locals())
+ 	return HttpResponseRedirect('/')
 
 
 def register(request):
