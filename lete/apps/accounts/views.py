@@ -10,8 +10,8 @@ from django.contrib.auth.decorators import login_required
 from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from rest_framework_xml.parsers import XMLParser
-from rest_framework import generics
+# from rest_framework_xml.parsers import XMLParser
+# from rest_framework import generics
 
 
 from django.shortcuts import render
@@ -35,7 +35,6 @@ def update_password(request):
 
 def logout(request):
  	auth.logout(request.user)
-
  	return render(request, 'logout.html', locals())
 
 
