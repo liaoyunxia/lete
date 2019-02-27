@@ -45,7 +45,7 @@ def register(request):
 def login_action(request):
  	username = request.POST.get('username')
  	password = request.POST.get('password')
-
+ 	print('username=%s, password=%s'%(username, password))
  	user = auth.authenticate(username=username, password=password)
  	if user:
  		print('1111111111')
