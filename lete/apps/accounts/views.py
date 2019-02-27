@@ -46,11 +46,13 @@ def login_action(request):
  	username = request.POST.get('username')
  	password = request.POST.get('password')
 
- 	user = auth.authticate(username=username, password=password)
+ 	user = auth.authenticate(username=username, password=password)
  	if user:
+ 		print('1111111111')
  		auth.login(request, user)
  		# user = get_object_or_none(get_user_model(), )
  		return Response({'code': 10000, 'msg': 'success'})
  	else:
+ 		print('2222222222')
  		return Response({'code': 10001, 'msg': 'not found user'})
 
