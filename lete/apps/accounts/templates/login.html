@@ -1,8 +1,19 @@
 {% extends 'base/base.html' %}
 {% block header_css_extend %}
 <style>
+.login-outer{
+	margin: 0 auto;
+}
+
+.login-box{
+	position: relative;
+	text-align:center
+
+
+}
 .demo-card-wide.mdl-card {
   width: 512px;
+
 }
 .demo-card-wide > .mdl-card__title {
   background-color: #666;
@@ -18,20 +29,30 @@
 
 {% block center_info %}
 		<div class="android-wear-section">
-          <div class="android-wear-band">
-          	<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+          <div class="android-wear-band login-outer">
+          	<div class="demo-card-wide login-box mdl-card mdl-shadow--2dp">
 			  <div class="mdl-card__title">
 			    <h2 class="mdl-card__title-text">Welcome</h2>
 			  </div>
-			  <div class="mdl-card__supporting-text">
-			    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-			    Mauris sagittis pellentesque lacus eleifend lacinia...
-			  </div>
+
+			  <!-- Textfield with Floating Label -->
+
+				<form action="/accounts/login/action/">
+				  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+				    <input class="mdl-textfield__input" type="text" id="username">
+				    <label class="mdl-textfield__label" for="username">用户名</label>
+				  </div>
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+				    <input class="mdl-textfield__input" type="text" id="passwprd">
+				    <label class="mdl-textfield__label" for="password">密码</label>
+				  </div>
+				
 			  <div class="mdl-card__actions mdl-card--border">
-			    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+			    <button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" type="submit">
 			      登录
-			    </a>
+			    </button> 
 			  </div>
+			  </form>
 			  <div class="mdl-card__menu">
 			    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
 			      <i class="material-icons">share</i>
