@@ -8,7 +8,7 @@ from django.contrib.auth.decorators import login_required
 
 
 from rest_framework.permissions import AllowAny
-from rest_framework.response import Response
+from rest_framework.response import Response, JsonResponse
 from rest_framework.views import APIView
 # from rest_framework_xml.parsers import XMLParser
 # from rest_framework import generics
@@ -48,11 +48,11 @@ def login_action(request):
  	print('username=%s, password=%s'%(username, password))
  	user = auth.authenticate(username=username, password=password)
  	if user:
- 		print('1111111111')
  		auth.login(request, user)
+ 		print('1111111111')
  		# user = get_object_or_none(get_user_model(), )
- 		return Response({'code': 10000, 'msg': 'success'})
+ 		return JsonResponse({'code': 10000, 'msg': 'success'})
  	else:
  		print('2222222222')
- 		return Response({'code': 10001, 'msg': 'not found user'})
+ 		return JsonResponse({'code': 10001, 'msg': 'not found user'})
 
