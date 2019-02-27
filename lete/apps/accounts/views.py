@@ -29,8 +29,8 @@ import json
  	return render(request, 'login.html', locals())
 
 
- def login(request):
- 	return render(request, 'login.html', locals())
+ def update_password(request):
+ 	return render(request, 'update_password.html', locals())
 
 
  def logout(request):
