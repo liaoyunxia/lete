@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 from django.contrib import auth
+# from django.http import HttpResponse
 from django.contrib.auth import get_user_model
 from django.shortcuts import redirect, render
 from django.template.defaultfilters import lower
