@@ -36,7 +36,7 @@ def update_password(request):
 
 
 def logout(request):
- 	auth.logout(request.user)
+ 	auth.logout(request)
  	return HttpResponseRedirect('/')
 
 
@@ -51,6 +51,7 @@ def login_action(request):
  	user = auth.authenticate(username=username, password=password)
  	if user:
  		auth.login(request, user)
+ 		user.backend = 'django.contrib.auth.backends.ModelBackend'
  		print('1111111111')
  		return HttpResponseRedirect('/')
  		# user = get_object_or_none(get_user_model(), )0726
