@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 from django.contrib import auth
-# from django.http import HttpResponse
+from django.http import HttpResponse
 from django.contrib.auth import get_user_model
 from django.shortcuts import redirect, render
 from django.template.defaultfilters import lower
@@ -9,7 +9,7 @@ from django.contrib.auth.decorators import login_required
 
 
 from rest_framework.permissions import AllowAny
-from rest_framework.response import Response, JsonResponse
+from rest_framework.response import Response
 from rest_framework.views import APIView
 # from rest_framework_xml.parsers import XMLParser
 # from rest_framework import generics
@@ -52,8 +52,8 @@ def login_action(request):
  		auth.login(request, user)
  		print('1111111111')
  		# user = get_object_or_none(get_user_model(), )
- 		return JsonResponse({'code': 10000, 'msg': 'success'})
+ 		return HttpResponse({'code': 10000, 'msg': 'success'}, content_type='application/json')
  	else:
  		print('2222222222')
- 		return JsonResponse({'code': 10001, 'msg': 'not found user'})
+ 		return HttpResponse({'code': 10001, 'msg': 'not found user'}, content_type='application/json')
 
