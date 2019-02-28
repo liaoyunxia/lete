@@ -52,9 +52,7 @@ def login_action(request):
  	if user:
  		auth.login(request, user)
  		user.backend = 'django.contrib.auth.backends.ModelBackend'
- 		print('1111111111')
  		return HttpResponseRedirect('/')
  	else:
- 		print('2222222222')
  		return HttpResponse({'code': 10001, 'msg': 'not found user'}, content_type='application/json')
 
