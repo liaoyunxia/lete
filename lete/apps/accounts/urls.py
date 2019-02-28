@@ -23,7 +23,7 @@ urlpatterns = [
 	url(r'^login/action/$', views.login_action),
 	url(r'^logout/$', views.logout),
     url(r'^register/$', views.register),
-    # url(r'^register/action$', views.register_action),
+    url(r'^register/action$', views.register_action),
 
     url(r'^update_password/$', views.update_password),
 ]

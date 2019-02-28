@@ -12,6 +12,9 @@ from django.contrib.auth.decorators import login_required
 from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 from rest_framework.views import APIView
+from nyssance.django.db.utils import get_object_or_none
+
+from accounts.models import accounts
 # from rest_framework_xml.parsers import XMLParser
 # from rest_framework import generics
 
@@ -51,8 +54,28 @@ def login_action(request):
  	user = auth.authenticate(username=username, password=password)
  	if user:
  		auth.login(request, user)
- 		user.backend = 'django.contrib.auth.backends.ModelBackend'
+ 		user.backend = 'django.contrib.auth.backends.ModelBackend'  
  		return HttpResponseRedirect('/')
  	else:
  		return HttpResponse({'code': 10001, 'msg': 'not found user'}, content_type='application/json')
 
+
+def register_action(request):
+	username = request.POST.get('username')
+ 	password = request.POST.get('password')
+
+ 	repassword = request.POST.get('repassword')
+ 	if password != repassword:
+ 		return HttpResponse({'code': 10002, 'msg': 'password not match'}, content_type='application/json')
+
+
+ 	print('username=%s, password=%s, repassword=%s'%(username, password, repassword))
+
+ 	user = get_object_or_none(get_user_model(), username=username)
+
+ 	if not user:
+ 		Ac
+
+ 		return HttpResponseRedirect('/accounts/login/')
+ 	else:
+ 		return HttpResponse({'code': 10001, 'msg': 'not found user'}, content_type='application/json')
