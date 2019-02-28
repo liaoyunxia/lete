@@ -14,7 +14,7 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from nyssance.django.db.utils import get_object_or_none
 
-from accounts.models import accounts
+from accounts.models import User
 # from rest_framework_xml.parsers import XMLParser
 # from rest_framework import generics
 
@@ -74,8 +74,10 @@ def register_action(request):
  	user = get_object_or_none(get_user_model(), username=username)
 
  	if not user:
- 		Ac
-
- 		return HttpResponseRedirect('/accounts/login/')
+ 		user = User.objects.create_user(username='username', password=password)
+ 		auth.login(request, user)
+ 		user.backend = 'django.contrib.auth.backends.ModelBackend'  
+ 		return HttpResponseRedirect('/')
+ 		# return HttpResponseRedirect('/accounts/login/')
  	else:
  		return HttpResponse({'code': 10001, 'msg': 'not found user'}, content_type='application/json')
